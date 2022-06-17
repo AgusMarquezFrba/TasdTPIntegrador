@@ -69,7 +69,7 @@ void loop()
       Serial.print("Writing: ");
       Serial.println(sensor.toLineProtocol());
   
-     // Se leen los valores de humedad y temperatura y se construye la Query
+     // Se leen los valores de humedad y temperatura y se envian los datos a la api de influx
 
      float h = dht.readHumidity();
      float t = dht.readTemperature();
